@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--开通会员可提高反编译速度、资源代码自动转名称，以及激活智能编辑和自动补全功能-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1670"
+    android:versionName="3.10.1"
+    android:compileSdkVersion="23"
+    android:compileSdkVersionCodename="6.0-2438415"
+    package="im.token.app"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="29" />
+    <uses-feature
+        android:name="android.hardware.location.network" />
+    <!-- 此应用可显示在其他应用上方 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 修改或删除您共享存储空间中的内容 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取您共享存储空间中的内容 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 查看WLAN连接 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 拍摄照片和视频 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 拥有完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问蓝牙设置 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 与蓝牙设备配对 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 防止手机休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 只有在前台运行时才能获取大致位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 只能在前台获取精确的位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 使用指纹硬件 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <!-- 使用生物特征硬件 -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <!-- 请求安装文件包 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:resizeable="true" />
+    <permission
+        android:name="im.token.app.permission.JPUSH_MESSAGE"
+        android:protectionLevel="0x00000002" />
+    <uses-permission android:name="im.token.app.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- 挂载文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 连接WLAN网络和断开连接 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 获取额外的位置信息提供程序命令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 更改网络连接性 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 检索正在运行的应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 控制振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 修改系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <application
+        android:theme="@7F12000A"
+        android:label="@7F110020"
+        android:icon="@7F0E0001"
+        android:name="org.consenlabs.imtoken.MainApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@7F0E0006"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:theme="@7F12000A"
+            android:label="@7F110020"
+            android:name="org.consenlabs.imtoken.MainActivity"
+            android:launchMode="2"
+            android:screenOrientation="1"
+            android:configChanges="0x000006B0"
+            android:adjustViewBounds="true"
+            android:windowSoftInputMode="0x00000023">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ethereum" />
+                <data android:scheme="bitcoin" />
+                <data android:scheme="eos" />
+                <data android:scheme="iban" />
+                <data android:scheme="imtoken" />
+                <data android:scheme="imtokenv2" />
+                <data android:scheme="simplewallet" />
+                <data android:scheme="wc" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@7F12013D"
+            android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity
+            android:theme="@01030010"
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:launchMode="1"
+            android:configChanges="0x000004E0" />
+        <activity
+            android:name="org.consenlabs.imtoken.WebViewActivity" />
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="direct" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="0001cdef87e8d060d20de2bd" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="im.token.app.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@7F14000B" />
+        </provider>
+        <meta-data
+            android:name="io.sentry.auto-init"
+            android:value="false" />
+        <activity
+            android:theme="@01030010"
+            android:name="com.pingplusplus.react.PingppActivity"
+            android:launchMode="1"
+            android:configChanges="0x00000480" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:exported="false"
+            android:configChanges="0x000004E0" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:exported="false"
+            android:configChanges="0x000004E0" />
+        <activity
+            android:theme="@01030010"
+
+android:name="com.alipay.sdk.app.PayResultActivity"
+            android:exported="true"
+            android:launchMode="3"
+            android:configChanges="0x000004E0">
+            <intent-filter>
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@01030010"
+            android:name="com.alipay.sdk.app.AlipayResultActivity"
+            android:exported="true"
+            android:launchMode="2" />
+        <activity
+            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+            android:exported="false"
+            android:screenOrientation="3"
+            android:configChanges="0x000004E0"
+            android:windowSoftInputMode="0x00000012" />
+        <provider
+            android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"
+            android:enabled="true"
+            android:exported="false"
+            android:authorities="im.token.app.SensorsDataContentProvider" />
+        <meta-data
+            android:name="com.sensorsdata.analytics.android.MainProcessName"
+            android:value="im.token.app" />
+        <activity
+            android:name="com.helpscout.beacon.ui.BeaconActivity"
+            android:noHistory="true" />
+        <activity
+            android:theme="@7F120361"
+            android:label="true"
+            android:name="com.helpscout.beacon.internal.presentation.ui.navigate.CustomNavigateActivity"
+            android:noHistory="true" />
+        <activity
+            android:theme="@7F12035E"
+            android:name="com.helpscout.beacon.internal.presentation.ui.home.HomeActivity"
+            android:windowSoftInputMode="0x00000013" />
+        <activity
+            android:theme="@7F12035E"
+            android:name="com.helpscout.beacon.internal.presentation.ui.message.SendMessageActivity"
+            android:windowSoftInputMode="0x00000012"
+            android:parentActivityName="com.helpscout.beacon.internal.presentation.ui.home.HomeActivity" />
+        <activity
+            android:theme="@7F120363"
+            android:name="com.helpscout.beacon.internal.presentation.ui.article.ArticleActivity"
+            android:parentActivityName="com.helpscout.beacon.internal.presentation.ui.home.HomeActivity" />
+        <activity
+            android:theme="@7F12035E"
+            android:name="com.helpscout.beacon.internal.presentation.ui.conversations.ConversationsActivity"/>
+            </application>
+            </manifest>
+<!--超出免费反编译长度限制，您将无法回编译-->
